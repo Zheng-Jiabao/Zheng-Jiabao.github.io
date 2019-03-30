@@ -1,0 +1,10 @@
+
+
+if(SearchURLlableI=="?acdr4563kioj908"){
+var lableII="7B Unit5";
+var Questionsmain=["一个不明飞行物","一本有用的书","看它的明亮的灯","飞机上的灯","充满,装满","把某物给某人看","和出生时尺寸一样","与...一样","停止生长","睁着眼睛睡觉","在出生时","一个星期天的早上","和往常一样","认真地听(某人说话)","在房间里找钥匙","在灌木丛中","转过身来","惊讶地做某事","迅速地跑开","某人发生了什么事?","自言自语","发出象低语的声音","听起来像鬼的声音","那天晚些时候","将小猫带到动物中心","朝某人喊","问题的答案","回复某人","很久以前居住在地球上","一会之前","昨天晚上","到达某地…","回到学校里来","前天","11厘米高","像渡渡鸟一样的奇怪的鸟","这么多的令人惊奇的动物","它的长脖子只有七块骨头","嗅觉好","在寒冷的冬天吃的很少或不吃东西","没有水生存很久","听说某事","环游世界","那天,前几天","用一只手写字,另一只手画画","用粉笔画3D画.","在同时.","它的名字来源于(以…来命名).","打牌.","停下来吃饭.","把肉夹在两片面包之间.","第一个电视节目","这种食物","平均100个家庭有29台电视","至少拥有一台电视.","一个叫...的男士","像一样大"]
+
+var Answersmain=["A UFO","a useful book","look at its bright lights","the lights on the plane","be full of","show sb. sth.=show sth. to sb.","the same size from birth","the same as","stop growing","sleep with one's eyes open","at birth=when sb. was born","one Sunday morning","as usual","listen (to sb.) carefully","search their room for the key=search for the key in their room","in the bushes","turn around","Be surprised to do sth.","run away quickly","What happened to sb?","say to oneself","make a sound like a whisper","sound like a ghost","later that day","take the little cat to the animal center;","shout at sb","the answer to the question","reply to sb","live on the earth a long time ago","a moment ago","last night=yesterday evening","get to/reach","come back to school","the day before yesterday","11 centimetres tall","some strange birds like dodos","so many amazing animals","have only seven bones in its long neck","Smell things well","eat little or nothing in cold winter","live without water for a long time","hear of sth","travel around the world","the other day","write with one hand and draw with the other hand","draw 3-D Pictures with chalk","at the same time","get one's name from","play cards","stop to have dinner","put meat between two pieces of bread","the first TV show","this kind of food","have 29 TVs per 100 families","have at least one TV","a man called","as large as","become popular all over the world"]
+
+
+}
