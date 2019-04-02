@@ -1,0 +1,1 @@
+var SearchURLlableI=window.location.search;
