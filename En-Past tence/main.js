@@ -9,7 +9,7 @@ function turnlocal(loadbool){
 if(loadbool==1){
 window.location.reload()
 }else{
-window.location.href=window.location.href+Answersmain[TheQuastionNumberForArray]
+window.location.href=window.location.href+","+Answersmain[TheQuastionNumberForArray]
 }
 }
 function showed(){
