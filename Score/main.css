@@ -1,0 +1,23 @@
+.UPspan {
+	font-family: "Comic Sans MS";
+	font-size: 18px;
+	font-style: oblique;
+	line-height: normal;
+	font-weight: bold;
+	color: #0000FF;
+}
+.UPspan #chooseBAR {
+	text-decoration: underline;
+}
+.UPspan #chooseLINE {
+	text-decoration: underline;
+}
+#BARorLINE {
+	height: 90%;
+	width: 100%;
+}
+.styleinA {
+	font-family: "Comic Sans MS";
+	font-size: 18px;
+	color: #FF0000;
+}
