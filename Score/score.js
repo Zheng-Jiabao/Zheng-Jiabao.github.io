@@ -1,9 +1,23 @@
 // JavaScript Document
-$("#BARorLINE").hide(0);
-$("#BarChooseWhichTask").hide(0);
-$("#BarMain").hide(0);
+var app=new Vue({
+				el:"#app",
+				data:{
+					willshow:{
+						BARorLINE:true,
+						BarChooseWhichTask:false,
+						BarMain:false
+						}
+					}
+				}
+				)
+app.willshow.BARorLINE=true;
+app.willshow.BarChooseWhichTask=false;
+app.willshow.BarMain=false;
 
-$("#BARorLINE").show(0);
+
+
+
+
 $("#chooseBAR").click(function(){
 	 $("#BarChooseWhichTask").show(0);
 	 $("#BARorLINE").hide(0);

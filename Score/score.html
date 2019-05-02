@@ -6,42 +6,46 @@
 <link href="main.css" rel="stylesheet" type="text/css" />
 <script src="jquery-3.3.1.js"></script>
 <script src="Chart.2.8.0.js"></script>
-<script src="Data.js"></script>
+<script src="vue.js"></script>
+
 </head>
 
 <body>
+<div id="app">
+	<div id="BARorLINE" align="center" v-if="willshow.BARorLINE">
+		<p class="styleinA">Writer:Zheng Jiabao</p>
+		<br />
+		<p class="styleinA">Thanks:</p>
+		<a href="http://www.chartjs.org">
+		<img src="chartjs-logo.svg" alt="chartjs-logo" width="90" height="90" />
+		<img src="chartjs-word.png" alt="chartjs-word" width="140" height="37" />
+		</a>
+		<br />
+		<p class="styleinA">and</p>
+		<br />
+		<a href="http://github.com">
+		<img src="GitHub-Logo.png" alt="GitHub-logo" />
+		</a>
+		<br />
+		<br /><br />
+		<p align="center">
+		<span class="UPspan">
+		<span>Chooce :</span></span></p>
+		<p align="center"><span class="UPspan">
+		  <span id="chooseBAR"> bar </span>
+		  <span> | </span>
+		  <span id="chooseLINE"> line </span></span></p>
+	</div>
+	
+	<div id="BarChooseWhichTask" align="center" v-if="willshow.BarChooseWhichTask">
+		<h4 >There are <span id="howmanytasks"></span> tasks,which do you want to see?</h4>
+		<ol id="BarChooseWhichTaskList">
+		</ol>
+	</div>
+	<div id="BarMain" v-if="willshow.BarMain">
+		<h3>At the Task <span id="TaskName"></span> ,you get the score:</h3>
+	</div>
 
-<div id="BARorLINE" align="center">
-<p class="styleinA">Writer:Zheng Jiabao</p>
-<br />
-<p class="styleinA">Thanks:</p>
-<a href="http://www.chartjs.org">
-<img src="chartjs-logo.svg" alt="chartjs-logo" width="90" height="90" />
-<img src="chartjs-word.png" alt="chartjs-word" width="140" height="37" />
-</a>
-<br />
-<p class="styleinA">and</p>
-<br />
-<a href="http://github.com">
-<img src="GitHub-Logo.png" alt="GitHub-logo" />
-</a>
-<br />
-<br /><br />
-<p align="center">
-<span class="UPspan">
-<span>Chooce :</span></span></p>
-<p align="center"><span class="UPspan">
-  <span id="chooseBAR"> bar </span>
-  <span> | </span>
-  <span id="chooseLINE"> line </span></span></p>
-</div>
-<div id="BarChooseWhichTask" align="center">
-<h4 >There are <span id="howmanytasks"></span> tasks,which do you want to see?</h4>
-<ol id="BarChooseWhichTaskList">
-</ol>
-</div>
-<div id="BarMain">
-<h3>At the Task <span id="TaskName"></span> ,you get the score:</h3>
 </div>
 <script src="score.js"></script>
 </body>
