@@ -4,6 +4,9 @@
 <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
 <title>无标题文档</title>
 <link href="main.css" rel="stylesheet" type="text/css" />
+<script src="jquery-3.3.1.js"></script>
+<script src="Chart.2.8.0.js"></script>
+<script src="Data.js"></script>
 </head>
 
 <body>
@@ -26,15 +29,21 @@
 <br /><br />
 <p align="center">
 <span class="UPspan">
-<span>See :</span>
-<span id="chooseBAR"> bar </span>
-<span> | </span>
-<span id="chooseLINE"> line </span>
-</span>
-</p>
+<span>Chooce :</span></span></p>
+<p align="center"><span class="UPspan">
+  <span id="chooseBAR"> bar </span>
+  <span> | </span>
+  <span id="chooseLINE"> line </span></span></p>
 </div>
-
-
+<div id="BarChooseWhichTask" align="center">
+<h4 >There are <span id="howmanytasks"></span> tasks,which do you want to see?</h4>
+<ol id="BarChooseWhichTaskList">
+</ol>
+</div>
+<div id="BarMain">
+<h3>At the Task <span id="TaskName"></span> ,you get the score:</h3>
+</div>
+<script src="score.js"></script>
 </body>
 
 </html>

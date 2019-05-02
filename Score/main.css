@@ -6,18 +6,40 @@
 	font-weight: bold;
 	color: #0000FF;
 }
-.UPspan #chooseBAR {
-	text-decoration: underline;
-}
-.UPspan #chooseLINE {
-	text-decoration: underline;
-}
 #BARorLINE {
 	height: 90%;
 	width: 100%;
 }
+#BarChooseWhichTask {
+	height: 90%;
+	width: 100%;
+}
+#BarChooseWhichTask h4 {
+	color: #0000FF;
+	font-family: "Comic Sans MS";
+	font-size: 18px;
+}
+
+
 .styleinA {
 	font-family: "Comic Sans MS";
 	font-size: 18px;
 	color: #FF0000;
+}
+#chooseBAR {
+
+	text-decoration: underline;
+}
+#chooseLINE {
+
+	text-decoration: underline;
+}
+#BarMain h3 {
+color: #0000FF;
+	font-family: "Comic Sans MS";
+	font-size: 18px;
+}
+#BarMain #TaskName {
+	font-family: "Times New Roman", Times, serif;
+	color: #000066;
 }
