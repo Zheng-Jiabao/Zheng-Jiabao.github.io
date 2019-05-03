@@ -38,12 +38,19 @@
 	</div>
 	
 	<div id="BarChooseWhichTask" align="center" v-if="willshow.BarChooseWhichTask">
-		<h4 >There are <span id="howmanytasks"></span> tasks,which do you want to see?</h4>
+		<h4 >There are {{TaskNumber}} tasks,which do you want to see?</h4>
 		<ol id="BarChooseWhichTaskList">
+		<template v-for="(name,whichnumber) in TaskNames">
+		<li>
+		<button v-on:click="toBarMain(whichnumber)">chooce</button>
+      <p>{{ name.Name }}</p>
+    </li>
+	</template>
 		</ol>
 	</div>
 	<div id="BarMain" v-if="willshow.BarMain">
 		<h3>At the Task <span id="TaskName"></span> ,you get the score:</h3>
+		
 	</div>
 
 </div>

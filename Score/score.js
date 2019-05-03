@@ -1,36 +1,41 @@
 // JavaScript Document
 var app=new Vue({
-				el:"#app",
-				data:{
-					willshow:{
-						BARorLINE:true,
-						BarChooseWhichTask:false,
-						BarMain:false
-						}
-					}
-				}
-				)
+	el:"#app",
+	data:{
+		willshow:{
+			BARorLINE:true,
+			BarChooseWhichTask:false,
+			BarMain:false
+		},
+		TaskNumber:0,
+		TaskNames:[
+			{Name:"First Month Task"},
+			{Name:"Mid-Team Task"}
+		],
+		getScore:[
+				  
+				  ]
+	},
+	methods:{
+		toBarMain:function(whichTask){
+			this.willshow.BarMain=true;
+			this.willshow.BarChooseWhichTask=false;
+			}
+	}
+})
+app.TaskNumber=app.TaskNames.length
 app.willshow.BARorLINE=true;
 app.willshow.BarChooseWhichTask=false;
 app.willshow.BarMain=false;
-
-
-
-
-
 $("#chooseBAR").click(function(){
-	 $("#BarChooseWhichTask").show(0);
-	 $("#BARorLINE").hide(0);
-	 $("#howmanytasks").text(TasksWeA.length);
-	 for (var i=0; i<TasksWeA.length; i++){
-		 $("#BarChooseWhichTaskList").html($("#BarChooseWhichTaskList").html()+"<li>"+TasksWeA[i]+"</li>");
-		 $("ol li:eq("+i+")").click(
-			function(){
-				BarMaker(i);
-				}
-			);
-		 }
-	 })
+			app.willshow.BARorLINE=false;
+			app.willshow.BarChooseWhichTask=true;	
+							   })
+
+
+
+
+
 function BarMaker(whichtast){
 	$("#BarChooseWhichTask").hide(0);
 	$("#BarMain").show(0);
