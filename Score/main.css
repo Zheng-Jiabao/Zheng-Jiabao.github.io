@@ -43,3 +43,8 @@ color: #0000FF;
 	font-family: "Times New Roman", Times, serif;
 	color: #000066;
 }
+#BarMain {
+	height: 80%;
+	width: 60%;
+	top: auto;
+}

@@ -2,16 +2,16 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
-<title>无标题文档</title>
+<title>Score*</title>
 <link href="main.css" rel="stylesheet" type="text/css" />
 <script src="jquery-3.3.1.js"></script>
-<script src="Chart.2.8.0.js"></script>
-<script src="vue.js"></script>
 
+<script src="vue.js"></script>
+<script src="Chart.2.8.0.js"></script>
 </head>
 
 <body>
-<div id="app">
+<div id="app" align="center">
 	<div id="BARorLINE" align="center" v-if="willshow.BARorLINE">
 		<p class="styleinA">Writer:Zheng Jiabao</p>
 		<br />
@@ -41,16 +41,11 @@
 		<h4 >There are {{TaskNumber}} tasks,which do you want to see?</h4>
 		<ol id="BarChooseWhichTaskList">
 		<template v-for="(name,whichnumber) in TaskNames">
-		<li>
-		<button v-on:click="toBarMain(whichnumber)">chooce</button>
-      <p>{{ name.Name }}</p>
-    </li>
+		<li v-html='\'<li><a href=\"linkChart?Bar=\'+number+\'\"><p class="styleinA\">\'+name+\'</p></a></li>\''></li>
 	</template>
 		</ol>
 	</div>
-	<div id="BarMain" v-if="willshow.BarMain">
-		<h3>At the Task <span id="TaskName"></span> ,you get the score:</h3>
-		
+
 	</div>
 
 </div>
