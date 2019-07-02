@@ -99,7 +99,7 @@ GameManager.prototype.actuate = function () {
   this.actuator.actuate(this.grid, {
     score:     this.score,
     over:      this.over,
-    won:       this.won,
+    won:       false,
     bestScore: this.scoreManager.get()
   });
 
