@@ -1,4 +1,4 @@
-16384
+65536
 =====
 
-Difficulty enhancement for popular 2048/4096/8192 games
+chick [https://zheng-jiabao.github.io/Super16384/index.html]here to play 1024 game of 16x16 mode
