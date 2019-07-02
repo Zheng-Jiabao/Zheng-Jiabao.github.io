@@ -5,7 +5,7 @@ function GameManager(size, InputManager, Actuator, ScoreManager) {
 if(location.pathname="/Super16384/index.html"){
 		  this.size         = 16; 
 		    this.startTiles   = 2;
-		}else if(location.pathname="/Super16384/16384_files/easier.html"){
+		}else if(location.pathname="/Super16384/16384_files/crazier.html"){
 			this.size         = 16; 
 		    this.startTiles   = 128;
 		}
@@ -48,10 +48,10 @@ function getanewRANDnum(){
 	if(location.pathname="/Super16384/index.html"){
 		return Math.random()<0.9?2:4
 		}
-	else if(location.pathname="/Super16384/16384_files/easier.html"&&location.search="?easier"){
+	else if(location.pathname="/Super16384/16384_files/crazier.html"&&location.search="?easier"){
 		return Math.random()<0.9?2:4
 		}
-	else if(location.pathname="/Super16384/16384_files/easier.html"&&location.search="?crazier"){
+	else if(location.pathname="/Super16384/16384_files/crazier.html"&&location.search="?crazier"){
 	var rand=Math.random();
 	if(rand>0.99){return 4096;}
 	if(rand>0.98){return 2048;}
@@ -179,10 +179,10 @@ GameManager.prototype.move = function (direction) {
 	  if(location.pathname="/Super16384/index.html"){
 		this.addRandomTile(true);
 		}
-	else if(location.pathname="/Super16384/16384_files/easier.html"&&location.search="?easier"){
+	else if(location.pathname="/Super16384/16384_files/crazier.html"&&location.search="?easier"){
 		this.addRandomTile(false);
 		}
-	else if(location.pathname="/Super16384/16384_files/easier.html"&&location.search="?crazier"){
+	else if(location.pathname="/Super16384/16384_files/crazier.html"&&location.search="?crazier"){
 		this.addRandomTile(false);
 	}
     
