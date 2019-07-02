@@ -1,10 +1,14 @@
 function GameManager(size, InputManager, Actuator, ScoreManager) {
-  this.size         = 16; // Size of the grid
   this.inputManager = new InputManager;
   this.scoreManager = new ScoreManager;
   this.actuator     = new Actuator;
-
-  this.startTiles   = 2;
+if(location.pathname="/Super16384/index.html"){
+		  this.size         = 16; 
+		    this.startTiles   = 2;
+		}else if(location.pathname="/Super16384/16384_files/easier.html"){
+			this.size         = 16; 
+		    this.startTiles   = 128;
+		}
 
   this.inputManager.on("move", this.move.bind(this));
   this.inputManager.on("restart", this.restart.bind(this));
@@ -40,15 +44,51 @@ GameManager.prototype.addStartTiles = function () {
   }
 };
 
+function getanewRANDnum(){
+	if(location.pathname="/Super16384/index.html"){
+		return Math.random()<0.9?2:4
+		}
+	else if(location.pathname="/Super16384/16384_files/easier.html"&&location.search="?easier"){
+		return Math.random()<0.9?2:4
+		}
+	else if(location.pathname="/Super16384/16384_files/easier.html"&&location.search="?crazier"){
+	var rand=Math.random();
+	if(rand>0.99){return 4096;}
+	if(rand>0.98){return 2048;}
+	if(rand>0.97){return 1024;}
+	if(rand>0.95){return 512;}
+	if(rand>0.9){return 256;}
+	if(rand>0.85){return 128;}
+	if(rand>0.8){return 64;}
+	if(rand>0.75){return 32;}
+	if(rand>0.7){return 16;}
+	if(rand>0.6){return 8;}
+	if(rand>0.4){return 4;}
+	return 2;
+		}
+	
+}
 // Adds a tile in a random position
-GameManager.prototype.addRandomTile = function () {
-  if (this.grid.cellsAvailable()) {
-      var value = Math.random() < 0.9 ? 2 : 4;
+GameManager.prototype.addRandomTile = function (addmode) {
+  if(addmode){
+		if (this.grid.cellsAvailable()) {
+			
+			var value = getanewRANDnum();
     var tile = new Tile(this.grid.randomAvailableCell(), value);
 
     this.grid.insertTile(tile);
+  }}else{
+	  for(var i=0;i<8;i++){
+		  if (this.grid.cellsAvailable()) {
+      var value = getanewRANDnum();
+    var tile = new Tile(this.grid.randomAvailableCell(), value);
+
+    this.grid.insertTile(tile);
+		  }
+	  }
   }
 };
+
 
 // Sends the updated grid to the actuator
 GameManager.prototype.actuate = function () {
@@ -136,7 +176,16 @@ GameManager.prototype.move = function (direction) {
   });
 
   if (moved) {
-    this.addRandomTile();
+	  if(location.pathname="/Super16384/index.html"){
+		this.addRandomTile(true);
+		}
+	else if(location.pathname="/Super16384/16384_files/easier.html"&&location.search="?easier"){
+		this.addRandomTile(false);
+		}
+	else if(location.pathname="/Super16384/16384_files/easier.html"&&location.search="?crazier"){
+		this.addRandomTile(false);
+	}
+    
 
     if (!this.movesAvailable()) {
       this.over = true; // Game over!
