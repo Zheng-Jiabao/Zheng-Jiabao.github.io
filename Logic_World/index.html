@@ -3,8 +3,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
 <title>Logic World</title>
+<script src="JSs/jquery-3.4.1.js"></script>
 <style type="text/css">
-<!--
 div .choice :hover{
 	width:300px;
 }
@@ -27,19 +27,26 @@ body {
 	font-weight: bold;
 	font-variant: normal;
 	text-transform: none;
-	color: #000066;
+	color: #FFFFFF;
 	text-align: center;
 	vertical-align: middle;
 	text-shadow: 3px 3px 3px #FF0000;
+}
+a:hover {
+	background-color: #0000FF;
 }
 .DIVchose .Choice #choicefont {
 	font-size: 36px;
 	font-weight: bold;
 	text-decoration: underline;
 }
--->
 </style>
 <link href="font/font_define.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" language="javascript">
+	$("#Unit1").mouseover(function(){
+		$("#Unit1").css("background-color","yellow");
+	})
+</script>
 </head>
 
 <body>
@@ -47,7 +54,7 @@ body {
 <hr />
 <p class>Choose a Unit: </p>
 <div align="center"><div class="DIVchose">
-<div class="Choice"><a id="unit" href="choose/choose.html?1">Unit 1:<span id="choicefont">IF</span></a></div>
+<a id="unit" href="choose/choose.html?id=1"><div class="Choice" id="unit1">Unit 1:<span id="choicefont">IF</span></div></a>
 
 </div></div>
 </body>
