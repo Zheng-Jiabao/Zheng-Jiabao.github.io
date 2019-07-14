@@ -1,3 +1,11 @@
 # About-my-study
 
-To file https://zheng-jiabao.github.io/En-Past_tence/index.html ,you can review Past Tence
+# Or About my games
+
+_I said , All thing for study will change into Game at last._
+
+Super16384 [PLAY](https://Zheng-Jiabao.github.io/Super16384/)
+
+Logic World (con not work now)
+
+[VIEW](https://Zheng-Jiabao.github.io/Logic_World/)
