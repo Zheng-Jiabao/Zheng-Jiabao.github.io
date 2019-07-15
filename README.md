@@ -8,4 +8,4 @@ Super16384 [PLAY](https://Zheng-Jiabao.github.io/games/Super16384/)
 
 Logic World (con not work now)[VIEW](https://Zheng-Jiabao.github.io/games/Logic_World/)
 
-Mazebot,Forked from [_noops-challenge_](https://github.com/noops-challenge),Because of the bad Internet,I'm not in the forked list.[PLAY](https://Zheng-Jiabao.github.io/games/Mazebot/)
+Mazebot,Forked from [_noops-challenge_](https://github.com/noops-challenge)   [PLAY](https://Zheng-Jiabao.github.io/games/Mazebot/)
