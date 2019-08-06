@@ -1,8 +1,0 @@
-
-
-
-var lableII="Past Tence";
-var Questionsmain=["are","am","is","bear","beat","become","begin","blow","break","bring","build","burn","buy","catch","choose","come","cost","cut","deal","dig","do","draw","dream","drink","drive","eat","feed","feel","fight","find","fly","forget","get","give","go","grow","hang","have","hear","hide","hit","hold","hurt","keep","know","lay","lead","learn","leave","lend","let","lie","light","lose","make","mean","meet","mistake","pay","put","read","ride","ring","rise","run","say","see","sell","send","set","shake","shine","show","shut","sing","sit","sleep","smell","speak","speed","spell","spend","spread","stand","steal","stick","swim","take","teach","tell","think","throw","understand","wake","wear","win","write","walk","live","cry","stop","start","love","play","plan","reply"];
-
-var Answersmain=["were","was","was","bore","beat","became","began","blew","broke","brought","built","burnt","bought","caught","chose","came","cost","cut","dealt","du","did","drew","dreamt","drank","drove","ate","fed","felt","fought","found","flew","forgot","got","gave","went","grew","hung","had","heard","hid","hit","held","hurt","kept","knew","laid","led","learnt","left","lent","let","lay","lit","lost","made","meant","met","mistook","paid","put","read","rode","rang","rose","ran","said","saw","sold","sent","set","shook","shone","showed","shut","sang","sat","slept","smelt","spoke","sped","spelt","spent","spread","stood","stole","stuck","swam","took","taught","told","thought","threw","understood","woke","wore","won","wrote","walked","lived","cried","stopped","started","loved","played","planned","replied"
-];
