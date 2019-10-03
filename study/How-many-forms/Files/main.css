@@ -1,0 +1,30 @@
+#main {
+	font-family: "Times New Roman", Times, serif;
+	margin: auto;
+	width: 80%;
+	border-top-width: thin;
+	border-right-width: thin;
+	border-bottom-width: thin;
+	border-left-width: thin;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	position: absolute;
+	visibility: inherit;
+	height: auto;
+	left: 10%;
+	top: auto;
+	right: 10%;
+	bottom: auto;
+	text-align: center;
+}
+#main #maintable {
+	font-family: "Times New Roman", Times, serif;margin: auto;height: 100%;width: 100%;border: thin double #FF0000;left: auto;top: auto;right: auto;bottom: auto;
+}
+.NumberT {	font-family: "Comic Sans MS";font-size: 18px;font-style: normal;line-height: normal;font-weight: normal;font-variant: normal;text-transform: none;color: #000000;text-decoration: none;margin: auto;height: auto;width: 5%;
+}
+.WordsT {	font-family: "Comic Sans MS";font-size: 18px;font-style: normal;line-height: normal;font-weight: normal;font-variant: normal;text-transform: none;color: #000000;text-decoration: none;margin: auto;height: auto;width: 95%;
+}#main #returnner {
+	border: thin double #0000FF;
+}
